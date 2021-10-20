@@ -39,7 +39,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     name: "Manuel Bauer",
-    helpText: "Help Message",
+    helpText: "Real Sorry",
   });
 });
 
