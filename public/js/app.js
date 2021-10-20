@@ -3,6 +3,7 @@ console.log("Client side JS File is loaded!");
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
+const messageTwo = document.querySelector("#message-2");
 const errorOne = document.querySelector("#error-1");
 
 const fetchSearch = (address) => {
@@ -12,7 +13,8 @@ const fetchSearch = (address) => {
       if (data.error) {
         errorOne.textContent = data.error;
       } else {
-        messageOne.textContent = `${data.location} - ${data.forecast}`;
+        messageOne.textContent = `${data.location}`;
+        messageTwo.textContent = `${data.forecast}`;
       }
     });
   });
