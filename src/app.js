@@ -88,7 +88,7 @@ app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
     message: "Help article not found",
-    name: "Roderick von Reudighausen",
+    name: "Manuel Bauer",
   });
 });
 
@@ -96,7 +96,7 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
     message: "Page not found",
-    name: "Roderick von Reudighausen",
+    name: "Manuel Bauer",
   });
 });
 
