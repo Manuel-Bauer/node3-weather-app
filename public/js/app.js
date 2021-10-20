@@ -6,7 +6,7 @@ const messageOne = document.querySelector("#message-1");
 const errorOne = document.querySelector("#error-1");
 
 const fetchSearch = (address) => {
-  searchQuery = `http://localhost:3000/weather?address=${address}`;
+  searchQuery = `/weather?address=${address}`;
   fetch(searchQuery).then((response) => {
     response.json().then((data) => {
       if (data.error) {
